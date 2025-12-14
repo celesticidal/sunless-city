@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/data0/sunless.city
+    - /bin/cp -R C:\Users\shiik\Documents\websites\sunless-city $DEPLOYPATH
