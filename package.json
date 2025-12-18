@@ -14,5 +14,8 @@
     "@astrojs/ts-plugin": "^1.10.6",
     "astro": "^5.16.5",
     "preact": "^10.28.0"
+  },
+  "devDependencies": {
+    "prettier": "3.7.4"
   }
 }

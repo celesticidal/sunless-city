@@ -4,5 +4,5 @@ import preact from "@astrojs/preact";
 
 export default defineConfig({
   site: "https://sunless.city",
-  integrations: [preact()]
+  integrations: [preact()],
 });

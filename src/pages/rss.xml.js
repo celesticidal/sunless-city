@@ -1,11 +1,11 @@
-import rss, { pagesGlobToRssItems } from '@astrojs/rss';
+import rss, { pagesGlobToRssItems } from "@astrojs/rss";
 
 export async function GET(context) {
   return rss({
-    title: 'my blog',
-    description: 'baby site practice',
+    title: "my blog",
+    description: "baby site practice",
     site: context.site,
-    items: await pagesGlobToRssItems(import.meta.glob('./**/*.md')),
+    items: await pagesGlobToRssItems(import.meta.glob("./**/*.md")),
     customData: `<language>en-us</language>`,
   });
 }
