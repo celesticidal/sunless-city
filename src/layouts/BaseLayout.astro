@@ -1,7 +1,8 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import '../styles/global.css'
+import Header from "../components/Header.astro";
+import Sidebar from "../components/Sidebar.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
 
 const { pageTitle } = Astro.props;
 ---
@@ -11,16 +12,38 @@ const { pageTitle } = Astro.props;
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
+    <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
   <body>
-<Header />
-    <h1>welcome to the sunless.city</h1>
-    <slot />
-    <Footer />
-    <script>
-        import "../scripts/menu.js";
-    </script>
+    <div>
+      <img
+        src="src/images/head.png"
+        alt="a city at night"
+        style="width:100%; max-width:1920px"
+        border-radius="20px;"
+      />
+    </div>
+
+    <div class="right-sidebar-floated-blocks">
+      <div class="menu">
+        <Header />
+      </div>
+      <div class="main-wrap">
+        <div class="right-wrap">
+          <div class="main-content">
+            <h1>welcome to a sunless.city</h1>
+            <slot />
+          </div>
+          <div class="right-sidebar"><Sidebar /></div>
+        </div>
+      </div>
+      <div class="footer">
+        <Footer />
+        <script>
+          import "../scripts/menu.js";
+        </script>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,9 +1,26 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Greeting from '../components/Greeting';
+import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "sunless.city";
 ---
+
 <BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome blog subtitle</h2>
-	 <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+  <h2>miri is back online!</h2>
+  <p>
+    After laying my last sites to rest a little over a decade ago, I have come
+    to the conclusion that the internet has kind of become a bummer without the
+    wild weirdness of randos like me putting up their little websites. It's not
+    like I have anything particularly important to say, but it turns out that
+    it's kind of fun to say or show off, but hey, it's not fash-owned
+    microblogging, right?
+  </p>
+  <p>
+    Mostly, this is going to be a journey of me relearning how to code, like
+    encino man revived to a landscape that's only just recognizable! We don't
+    scan shoxx shoots of our favorite j-rockers, then blast them with
+    grunge brushes until they're barely discernable and shove 'em in i-frames
+    anymore, apparently -- though I went digging through my external hard drive
+    earlier and found a couple of old layouts that I used to have up for
+    download back in the mid 00s. Y'know, maybe I should add a little museum
+    page to the trendy designs of yesteryear.
+  </p>
 </BaseLayout>
